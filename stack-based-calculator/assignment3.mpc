@@ -1,0 +1,46 @@
+project (assignment3) {
+    
+    install = .
+
+    specific(make){
+        compile_flags += -g
+        compile_flags += -std=c++11
+    }
+
+    Source_Files{
+        driver.cpp
+        Addition_Command.cpp
+        Binary_Command.cpp
+        Calculator.cpp
+        Division_Command.cpp
+        Modulo_Command.cpp
+        Multiply_Command.cpp
+        Number_Command.cpp
+        Parenthesis_Command.cpp
+        Stack_Command_Factory.cpp
+        Subtraction_Command.cpp
+    }
+
+    Header_Files{
+        Array_Base.h
+        Array.h
+        Array_Iterator.h
+        Addition_Command.h
+        Binary_Command.h
+        Division_Command.h
+        Calculator.h
+        Command.h
+        Modulo_Command.h
+        Multiply_Command.h
+        Number_Command.h
+        Parenthesis_Command.h
+        Stack.h
+        Stack_Command_Factory.h
+        Subtraction_Command.h
+    }
+
+    Inline_Files{
+        Array_Base.inl
+        Stack.inl
+    }
+}

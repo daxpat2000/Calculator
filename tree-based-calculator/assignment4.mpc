@@ -1,0 +1,55 @@
+  
+project (assignment4) {
+    
+    install = .
+    exename = assignment4
+
+    specific(make){
+        compile_flags += -g
+        compile_flags += -std=c++11
+    }
+
+    Source_Files{
+        driver.cpp
+        Addition_Node.cpp
+        Binary_Node.cpp
+        Calculator.cpp
+        Division_Node.cpp
+        Expression_Builder.cpp
+        Modulo_Node.cpp
+        Multiplication_Node.cpp
+        Node.cpp
+        Node_Visitor.cpp
+        Number_Node.cpp
+        Subtraction_Node.cpp
+        Tree_Builder.cpp
+        Tree_Expression.cpp
+        Tree_Visitor.cpp
+    }
+
+    Header_Files{
+        Addition_Node.h
+        Array_Base.h
+        Array.h
+        Array_Iterator.h
+        Binary_Node.h
+        Calculator.h
+        Division_Node.h
+        Expression_Builder.h
+        Modulo_Node.h
+        Multiplication_Node.h
+        Node.h
+        Node_Visitor.h
+        Number_Node.h
+        Subtraction_Node.h
+        Stack.h
+        Tree_Builder.h
+        Tree_Expression.h
+        Tree_Visitor.h
+    }
+
+    Inline_Files{
+        Array_Base.inl
+        Stack.inl
+    }
+}
